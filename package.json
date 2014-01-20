@@ -1,0 +1,33 @@
+{
+  "name": "js-ui-sample",
+  "version": "0.0.1",
+  "description": "UI Graph Sample Using Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:basicdays/js-ui-sample.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Component",
+    "UI"
+  ],
+  "author": "basicdays <info@basicdays.com> (http://basicdays.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basicdays/js-ui-sample/issues"
+  },
+  "homepage": "https://github.com/basicdays/js-ui-sample",
+  "dependencies": {
+    "http-server": "~0.6.1"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.17.0",
+    "component": "~0.19.5",
+    "jshint": "~2.3.0"
+  }
+}

@@ -1,0 +1,12 @@
+# local project files
+node_modules
+components
+build
+
+# editor
+.idea
+*.kate-swp
+
+# misc
+*.log
+.directory

@@ -1,0 +1,4 @@
+components
+node_modules
+client/site/build
+test/site/build

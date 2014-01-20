@@ -1,0 +1,14 @@
+{
+  "name": "js-ui-sample",
+  "repo": "basicdays/js-ui-sample",
+  "description": "UI Graph Sample Using Component",
+  "version": "0.0.1",
+  "keywords": [
+    "JavaScript",
+    "Component",
+    "UI"
+  ],
+  "license": "MIT",
+  "local": ["boot", "harness"],
+  "paths": ["client/components", "test/components"]
+}
