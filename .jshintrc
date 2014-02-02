@@ -18,5 +18,6 @@
   "smarttabs": true,
 
   "devel": true,
-  "node": true
+  "node": true,
+  "browser": true
 }

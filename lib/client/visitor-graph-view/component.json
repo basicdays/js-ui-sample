@@ -1,0 +1,11 @@
+{
+	"name": "visitor-graph-view",
+	"description": "D3 Graph representing viewer history",
+	"scripts": ["index.js"],
+	"styles": [],
+	"images": [],
+	"templates": [],
+	"dependencies": {
+		"mbostock/d3": "*"
+	}
+}

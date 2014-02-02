@@ -2,11 +2,12 @@
 	"name": "trend-view",
 	"description": "Trend view",
 	"scripts": ["index.js"],
-	"styles": [],
+	"styles": ["style.css"],
 	"images": [],
-	"templates": [],
+	"templates": ["template.html"],
 	"dependencies": {
-		"component/reactive": "*"
+		"component/reactive": "*",
+		"component/domify": "*"
 	},
-	"local": ["trend-data-set"]
+	"local": ["trend-data-set", "visitor-graph-view"]
 }

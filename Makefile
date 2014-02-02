@@ -28,7 +28,7 @@ test-server: test/server
 	@http-server -p 8081 test/server
 
 clean:
-	@rm -rf lib/site/build test/site/build
+	@rm -rf lib/server/build test/server/build
 
 nuke: clean
 	@rm -rf components

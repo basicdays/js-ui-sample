@@ -8,6 +8,9 @@
     "Component",
     "UI"
   ],
+  "dependencies": {
+    "visionmedia/superagent": "*"
+  },
   "license": "MIT",
   "local": ["boot"],
   "paths": ["lib/client"]
