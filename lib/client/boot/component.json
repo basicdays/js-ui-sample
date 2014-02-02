@@ -1,0 +1,9 @@
+{
+	"name": "boot",
+	"description": "Bootstrapper",
+	"scripts": ["index.js"],
+	"styles": [],
+	"images": [],
+	"templates": [],
+	"local": ["trend-view"]
+}

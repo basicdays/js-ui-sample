@@ -1,8 +1,8 @@
 export PATH := bin:node_modules/.bin:$(PATH)
 
-.PHONY: all server test test-lint test-server clean nuke
+.PHONY: build server test test-lint test-server clean nuke
 
-all: node_modules components client/site/build test/site/build
+build: node_modules components lib/server/build test/server/build
 
 node_modules: package.json
 	@npm install
@@ -10,25 +10,25 @@ node_modules: package.json
 components: component.json
 	@component install --dev
 
-client/site/build:
-	@component build --dev --out client/site/build
+lib/server/build:
+	@component build --dev --out lib/server/build
 
-test/site/build:
-	@component build --dev --out test/site/build
+test/server/build:
+	@component build --dev --out test/server/build
 
-server: client/site
-	@http-server client/site
+server: lib/server
+	@http-server lib/server
 
 test: test-lint
 
 test-lint:
 	@jshint .
 
-test-server: test/site
-	@http-server -p 8081 test/site
+test-server: test/server
+	@http-server -p 8081 test/server
 
 clean:
-	@rm -rf client/site/build test/site/build
+	@rm -rf lib/site/build test/site/build
 
 nuke: clean
-	@rm -rf node_modules components
+	@rm -rf components

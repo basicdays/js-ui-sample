@@ -1,0 +1,12 @@
+{
+	"name": "trend-data-set",
+	"description": "Trend data set model",
+	"scripts": ["index.js"],
+	"styles": [],
+	"images": [],
+	"templates": [],
+	"dependencies": {
+		"component/model": "*",
+		"component/model-schema": "*"
+	}
+}

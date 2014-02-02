@@ -8,11 +8,7 @@
     "Component",
     "UI"
   ],
-  "development": {
-    "visionmedia/mocha": "1.17.0",
-    "chaijs/chai": "1.8.1"
-  },
   "license": "MIT",
-  "local": ["boot", "harness"],
-  "paths": ["client/components", "test/components"]
+  "local": ["boot"],
+  "paths": ["lib/client"]
 }

@@ -1,0 +1,12 @@
+{
+	"name": "trend-view",
+	"description": "Trend view",
+	"scripts": ["index.js"],
+	"styles": [],
+	"images": [],
+	"templates": [],
+	"dependencies": {
+		"component/reactive": "*"
+	},
+	"local": ["trend-data-set"]
+}
