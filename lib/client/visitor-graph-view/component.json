@@ -2,10 +2,12 @@
 	"name": "visitor-graph-view",
 	"description": "D3 Graph representing viewer history",
 	"scripts": ["index.js"],
-	"styles": [],
+	"styles": ["style.css"],
 	"images": [],
-	"templates": [],
+	"templates": ["template.html"],
 	"dependencies": {
+		"component/domify": "*",
+		"component/reactive": "*",
 		"mbostock/d3": "*"
 	}
 }

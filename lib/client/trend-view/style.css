@@ -1,3 +1,12 @@
-#trend-view {
+.trend-view li {
+    display: inline-block;
+    vertical-align: top;
     border: 1px solid;
+    width: 12em;
+    height: 10em;
+}
+
+.trend-view li.graph {
+    width: 20em;
+    height: 20em;
 }

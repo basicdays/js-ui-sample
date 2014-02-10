@@ -1,0 +1,9 @@
+{
+	"name": "resset",
+	"description": "Base site style",
+	"scripts": [],
+	"styles": ["reset.css"],
+	"images": [],
+	"templates": [],
+	"dependencies": {}
+}

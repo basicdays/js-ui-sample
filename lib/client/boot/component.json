@@ -2,8 +2,8 @@
 	"name": "boot",
 	"description": "Bootstrapper",
 	"scripts": ["index.js"],
-	"styles": [],
+	"styles": ["master.css"],
 	"images": [],
 	"templates": [],
-	"local": ["trend-view"]
+	"local": ["reset", "trend-view"]
 }
