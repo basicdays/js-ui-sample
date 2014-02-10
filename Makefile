@@ -2,19 +2,22 @@ export PATH := bin:node_modules/.bin:$(PATH)
 
 .PHONY: build server test test-lint test-server clean nuke
 
-build: node_modules components lib/server/build test/server/build
+build: node_modules lib/client/components test/client/components lib/server/build test/server/build
 
 node_modules: package.json
 	@npm install
 
-components: component.json
-	@component install --dev
+lib/client/components: lib/client/component.json
+	@cd lib/client && component install --dev
+
+test/client/components: test/client/component.json
+	@cd test/client && component install --dev
 
 lib/server/build:
-	@component build --dev --out lib/server/build
+	@cd lib/client && component build --dev --out ../server/build
 
 test/server/build:
-	@component build --dev --out test/server/build
+	@cd test/client && component build --dev --out ../server/build
 
 server: lib/server
 	@http-server lib/server
@@ -31,4 +34,4 @@ clean:
 	@rm -rf lib/server/build test/server/build
 
 nuke: clean
-	@rm -rf components
+	@rm -rf lib/client/components test/client/components

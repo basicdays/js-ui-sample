@@ -1,0 +1,11 @@
+{
+	"name": "js-ui-sample-tests",
+	"description": "UI Graph Sample Using Component",
+	"dependencies": {
+		"visionmedia/mocha": "1.17.0",
+		"chaijs/chai": "1.8.1"
+	},
+	"license": "MIT",
+	"local": ["harness", "boot"],
+	"paths": ["./", "../../lib/client"]
+}

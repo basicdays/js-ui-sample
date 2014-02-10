@@ -1,5 +1,5 @@
 {
-  "name": "js-ui-sample",
+  "name": "client",
   "repo": "basicdays/js-ui-sample",
   "description": "UI Graph Sample Using Component",
   "version": "0.0.1",
@@ -13,5 +13,5 @@
   },
   "license": "MIT",
   "local": ["boot"],
-  "paths": ["lib/client"]
+  "paths": ["./"]
 }
