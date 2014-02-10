@@ -1,12 +1,10 @@
 {
-  "name": "harness",
-  "repo": "basicdays/js-ui-sample",
-  "description": "Test Harness",
-  "version": "0.0.1",
-  "development": {
-    "visionmedia/mocha": "1.17.0",
-    "chaijs/chai": "1.8.1"
-  },
-  "scripts": ["index.js"],
-  "local": []
+	"name": "harness",
+	"description": "Test Harness",
+	"scripts": ["index.js"],
+	"dependencies": {
+		"visionmedia/mocha": "*",
+		"chaijs/chai": "*"
+	},
+	"local": ["boot-tests"]
 }

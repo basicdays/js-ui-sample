@@ -1,4 +1,5 @@
-components
 node_modules
+lib/client/components
 lib/server/build
+test/client/components
 test/server/build

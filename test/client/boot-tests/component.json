@@ -1,0 +1,7 @@
+{
+	"name": "boot-tests",
+	"description": "Boot tests",
+	"scripts": ["index.js"],
+	"local": ["boot"],
+	"dependencies": {}
+}
