@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+'use strict';
+var exec = require('child_process').exec,
+    watch = require('node-watch');
+
+watch(['lib/client', 'test/client'], function() {
+	var build = exec('make -s clean && make -s');
+	build.stdout.pipe(process.stdout);
+	build.stderr.pipe(process.stderr);
+});
