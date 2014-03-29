@@ -1,5 +1,5 @@
 {
-	"name": "resset",
+	"name": "reset",
 	"description": "Base site style",
 	"scripts": [],
 	"styles": ["reset.css"],

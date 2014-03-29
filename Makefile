@@ -1,4 +1,13 @@
-export PATH := bin:node_modules/.bin:$(PATH)
+ifeq ($(OS),Windows_NT)
+	'export' := set
+	sep := ;
+	rm := rm -rf
+else
+	'export' := export
+	sep := :
+	rm = rm -rf
+endif
+$(export) PATH := bin$(sep)node_modules/.bin$(sep)$(PATH)
 
 build: node_modules lib/client/components test/client/components lib/server/build test/server/build
 
@@ -19,15 +28,18 @@ test/server/build: test/client/components
 	@echo "Building tests"
 	@cd test/client && component build --dev --out ../server/build
 
+.PHONY: watch
 watch:
 	@component watch
 
 server: lib/server
 	@http-server -p 8080 lib/server
 
+.PHONY: lint 
 lint:
 	@jshint .
 
+.PHONY: test
 test: lint
 	mocha
 
@@ -35,9 +47,8 @@ test-server: test/server/build
 	@http-server -p 8081 test/server
 
 clean:
-	@rm -rf lib/server/build test/server/build
+	@$(rm) lib/server/build test/server/build
 
 nuke: clean
-	@rm -rf lib/client/components test/client/components
+	@$(rm) lib/client/components test/client/components
 
-.PHONY: test
